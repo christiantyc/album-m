@@ -1,0 +1,33 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+function Login(){
+var done=0;
+var username=document.login.username.value;
+username=username.toLowerCase();
+var password=document.login.password.value;
+password=password.toLowerCase();
+if (username=="" && password=="tychurch") 
+{this.location.href="https://sites.google.com/view/cnectyc-m/photos/album"; done=1; }
+if (done==0) { alert("Login Invalid - try again."); }
+}
+// End -->
+</SCRIPT>
+</head>
+<body>
+<center>
+<img src="https://raw.githubusercontent.com/christiantyc/request-password/master/gs%20logo%20with%20word.png" class="CENy8b" onload="this.setAttribute('data-image-loaded', true)" onerror="this.setAttribute('data-image-error', true)" role="img" style="width: 30%; margin: 0% 0 0% -0.0000000625%" data-image-loaded="true">
+<table bgcolor="white" cellpadding="0" border="0" width="device-width">
+<br><br>
+<tr style="display:none"><td><h1><i><b></b></i></h1></td><td>
+<form name="login" onSubmit="Login(); return false;" action="#" >
+<input type="text" name="username" ></td></tr>
+<tr><td style="height:0px; overflow:hidden; width:device-width;"><b>Password:</b></td>
+<td style="height:0px; overflow:hidden; width:device-width;"><input type="password" name="password" style="width:70%;"><input type="submit" value="Login">
+</td></tr>
+</table>
+</center> 
+
+
+</body>
+</html>
