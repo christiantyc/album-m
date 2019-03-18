@@ -1,7 +1,7 @@
 <html>
 <head>
 <style>
-table, p{
+table{
    position: absolute;
    top: 50%;
    left: 50%;
@@ -9,7 +9,6 @@ table, p{
    height: 500px;
    margin-top: -250px; /* Half the height */
    margin-left: -250px; /* Half the width */
-   overflow:hidden;
 }
 
 .aligncenter {
@@ -18,7 +17,7 @@ table, p{
 
 .verticalcenter {
     display: table-cell;
-    height: 500px;
+    height: 400px;
     vertical-align: middle;
 }
 
@@ -45,24 +44,28 @@ if (done==0) { alert("Login Invalid - try again."); }
 </SCRIPT>
 </head>
 <body>
-<p class="aligncenter verticalcenter">
-<img src="https://raw.githubusercontent.com/christiantyc/request-password/master/gs%20logo%20with%20word.png"/>
-</p>
+
+
+
+
+
 <table class="aligncenter verticalcenter" cellpadding="0" border="0" width="device-width">
-  
+
 <tr style="display:none; height:0px;">
 <td style="display:none; height:0px;">
 <form name="login" onSubmit="Login(); return false;" action="#" >
 <input type="text" name="username" >
 </td>
+
+</tr>
+<tr style="display:none; height:0px;">
+<p>
+<img src="https://raw.githubusercontent.com/christiantyc/request-password/master/gs%20logo%20with%20word.png"/>
+</p>
 </tr>
 
-<tr style="display:none; height:0px;">
-
-   </tr>
-
-<tr>
 <td style="height:0px; overflow:hidden; width:device-width;">
+
 <b>Password:</b>
 
 </td>
