@@ -24,7 +24,7 @@ body,html{
   display:flex;
   align-items:center;
   z-index:2;
-  trasnform:scale(.97);
+  transform:scale(.97);
 }
 .c{
   position:relative;
