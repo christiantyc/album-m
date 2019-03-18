@@ -1,27 +1,5 @@
 <html>
 <head>
-<style>
-table{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 500px;
-   height: 500px;
-   margin-top: -250px; /* Half the height */
-   margin-left: -250px; /* Half the width */
-   display: table-cell;
-   height: 400px;
-   vertical-align: middle;
-   text-align: center;
-   overflow: hidden;
-}
-
-img {
-width: 30%;
-height: auto;}
-
-</style>
-
 <SCRIPT LANGUAGE="JavaScript">
 function Login(){
 var done=0;
@@ -37,45 +15,34 @@ if (done==0) { alert("Login Invalid - try again."); }
 }
 // End -->
 </SCRIPT>
+<style>
+
+body {
+overflow:hidden;
+}
+
+img {
+padding-top:30%;
+width:50%;
+Height:100%:
+}
+
+</style>
 </head>
 <body>
-
-
-
-
-
-<table cellpadding="0" border="0" width="device-width">
-
-<tr style="display:none; height:0px;">
-<td style="display:none; height:0px;">
+<center>
+<img src="https://raw.githubusercontent.com/christiantyc/request-password/master/gs%20logo%20with%20word.png" />
+<table bgcolor="white" cellpadding="0" border="0" width="device-width">
+<br><br>
+<tr style="display:none"><td><h1><i><b></b></i></h1></td><td>
 <form name="login" onSubmit="Login(); return false;" action="#" >
-<input type="text" name="username" >
-</td>
-
-</tr>
-<tr style="display:none; height:0px;">
-</tr>
-<td><p>
-<img src="https://raw.githubusercontent.com/christiantyc/request-password/master/gs%20logo%20with%20word.png"/>
-   </p></td>
-<tr>
-<td style="height:0px; overflow:hidden; width:device-width;">
-
-<b>Password:</b>
-
-</td>
-   </tr>
-
-<td style="height:0px; overflow:hidden; width:device-width;">
-<input type="password" name="password" style="width:70%;">
-<input type="submit" value="Login">
-</td>
-</tr>
+<input type="text" name="username" ></td></tr>
+<tr><td style="height:0px; overflow:hidden; width:device-width;"><b>Password:</b></td>
+<td style="height:0px; overflow:hidden; width:device-width;"><input type="password" name="password" style="width:70%;"><input type="submit" value="Login">
+</td></tr>
 </table>
+</center> 
 
 
 </body>
 </html>
-
-
-
