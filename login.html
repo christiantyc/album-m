@@ -30,9 +30,26 @@ height:auto;
 table{
 left:50%;
 }
+  
+.btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 15px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 100%;
+  border:2px solid white;
+  float: right;
+  }
 </style>
 </head>
 <body>
+<button onclick="goBack()" class="btn" alt="back to home page"><i class="fa fa-home"></i> </button>  
+
 <center>
 <img src="https://raw.githubusercontent.com/christiantyc/request-password/master/gs%20logo%20with%20word.png" />
 <table bgcolor="white" cellpadding="0" border="0" width="device-width">
@@ -44,6 +61,34 @@ left:50%;
 <td style="height:0px; overflow:hidden; width:device-width;"><input type="password" name="password" style="width:70%;"><input type="submit" value="Login">
 </td></tr>
 </table>
+  
+  
+  <script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })        
+  
+  function goBack() {
+  window.location="https://sites.google.com/view/cnectyc-m/home";
+}
+  </script>
 </center> 
 
 
