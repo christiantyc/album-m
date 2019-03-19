@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<SCRIPT LANGUAGE="JavaScript">
+function Login(){
+var done=0;
+var username=document.login.username.value;
+username=username.toLowerCase();
+var password=document.login.password.value;
+password=password.toLowerCase();
+if (username=="" && password=="tychurch") 
+{onclick= window.location.href='https://christiantyc.github.io/album-m/table-content/index.html'  
+; done=1; }
+if (done==0) { alert("Login Invalid - try again."); }
+}
+// End -->
+</SCRIPT>
+<style>
+body {
+max-height: auto;
+max-width: 100%;
+  margin: auto;
+overflow:hidden;
+}
+img {
+padding-top:50%;
+width:50%;
+height:auto;
+}
+table{
+left:50%;
+}
+</style>
+</head>
+<body>
+<center>
+<img src="https://raw.githubusercontent.com/christiantyc/request-password/master/gs%20logo%20with%20word.png" />
+<table bgcolor="white" cellpadding="0" border="0" width="device-width">
+<br><br>
+<tr style="display:none"><td><h1><i><b></b></i></h1></td><td>
+<form name="login" onSubmit="Login(); return false;" action="#" >
+<input type="text" name="username" ></td></tr>
+<tr><td style="height:0px; overflow:hidden; width:device-width;"><b>Password:</b></td>
+<td style="height:0px; overflow:hidden; width:device-width;"><input type="password" name="password" style="width:70%;"><input type="submit" value="Login">
+</td></tr>
+</table>
+</center> 
+
+
+</body>
+</html>
