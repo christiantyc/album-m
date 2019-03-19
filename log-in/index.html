@@ -22,20 +22,30 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
+ 
   body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
-    overflow-x:hidden;
-    background-color: lightblue;
+    overflow-x:hidden;   
+    height:100%;
+    background-image: url('https://christiantyc.github.io/album-m/album-bg.png');
+        /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    } 
     
-  }
   h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #303030;
+    color: white;
     font-weight: 600;
     margin-bottom: 30px;
+    text-shadow: 0px -0px 9px gold;
   }
   h4 {
     font-size: 19px;
@@ -45,10 +55,11 @@
     margin-bottom: 30px;
   }  
   .jumbotron {
-    background-color: #f4511e;
+    background-color: gold;
     color: #fff;
     padding: 70px 25px;
     font-family: Montserrat, sans-serif;
+    font-weight:bold;
   }
   .container-fluid {
     padding: 60px 50px;
@@ -99,6 +110,7 @@
     border: 0px solid #f4511e; 
     border-radius:5% !important;
     transition: box-shadow 0.5s;
+    opacity: 0.8;
 
   }
   .panel:hover {
@@ -136,7 +148,7 @@
   }
   .navbar {
     margin-bottom: 0;
-    background-color: #f4511e;
+    background-color: gold;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -145,11 +157,14 @@
     border-radius: 0;
     font-family: Montserrat, sans-serif;
   }
-  .navbar li a, .navbar .navbar-brand {
+  
+
+  
+  .navbar li a, .navbar, .navbar-brand {
     color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
+    color: gold !important;
     background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -236,14 +251,20 @@
     margin-left:0%;
     margin-right:0%;
     height:100%;
+    
+ 
 }  
   
-  img {
-    margin: 20px;
+
+  
+img {
+    margin-top: 20px;
     width: 80%;
     border: 2px solid black;
+    opacity: 1 !important;
+    border-radius:5% !important;
   }
-  
+
    a {
     color:#666666;
 text-decoration:none;
@@ -257,7 +278,6 @@ text-decoration:none;
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -266,7 +286,7 @@ text-decoration:none;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">1</a>
+      <a class="navbar-brand" href="#myPage"><div id="backbttn"><img src="https://raw.githubusercontent.com/christiantyc/request-password/master/gs%20logo%20with%20word.png" style="border:0px; height:auto; width:10%; margin:0px; position:fixed; left:0; top:0; !important;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -276,14 +296,13 @@ text-decoration:none;
         <li><a href="#pricing">BMW青少年團契</a></li>
       </ul>
     </div>
-  </div>
+  </div>  </div>
 </nav>
 
 <div class="jumbotron text-center">
   <h1>中華傳道會青衣堂</h1> 
   <p>China Native Evangelistic Crusade Tsing Yi Church</p> 
 </div>
-
 <!-- Container (About Section) -->
 
 <div id="about" class="container-fluid">
@@ -300,7 +319,7 @@ text-decoration:none;
     <div class="swiper-slide">
 
 	  <a href="https://photos.google.com/u/2/share/AF1QipOHicX6tkcS9yYg_vWpHFyxAVk4OSjv7uey75C3DJlaWC_bnxyi1YBUEA9LVOkwxg?key=elNwSVREcjFuLVF4UndEcUszWkswY0htMXpTeWdn">
-		  <img border="1" src="https://lh3.googleusercontent.com/Ew96qKe_eXEWOYpHR8Igf-HhJ7PZeQS1RTiiPzVfcEUBqFraxtu3nqIyxJrI0jjrP5LgI6ExW-jfgfGS1rfF9692qzZv9Kw2gbq0BkyCOGFMiL79PFf_JlcRE69jm8j4DhPvkAp0gaZfYLTzRRZ1TF0SkqDRpaLIkE8uLki_a7KE4--xSgcreapsGZMFkFL6nl-R5iyYEjoWxoNFE901W5mqacbPzEvy78w_qX_5ZjElWCVrhgbn146exrJLDNHmkGgmIoH03f08vQyGIjHwG3s8KfoEjVF5MK-DIfjoRAzhYyzhyzq4OrD4LUc0oALOLIfaiCjB22z9R0JJnGCw8g--uNGTUiEzYiLu9u_w7hxkvP445HyhMXqlTBexzH3SEzUeaxG-2vaAN3d39sRv5V8u0Jpiu7pMhkskG-78aMQErQhrokn21jVcUAf74A67cJjEv6pWHOhwO8QJPcKrzoUsYQORrU2z6Glz8Vmj1HrCO5oychNQ8YDy5n_ou2vxajr_p4Lq86A8ToAVHYzbcWltgAZZpIQvXMCqj9i7Qhh0EiPXNUimuJXEhvwrcwZ6tXks2rAVmvsCtqn7FpHvCEOd9NP4fgIPElxii90E0iF1VEWM-E-spUtzKg3vc0TYYK1wTeDfNuegDyERygEZVk7znpCSgZcf5ikkDQNShN76JBfMyEgCqejltwxWEjZ4Y2SEFV0ZSx_w2DZdMstel8h7=w802-h379-no" alt="" class="responsive"/><br>      
+		  <img src="https://lh3.googleusercontent.com/Ew96qKe_eXEWOYpHR8Igf-HhJ7PZeQS1RTiiPzVfcEUBqFraxtu3nqIyxJrI0jjrP5LgI6ExW-jfgfGS1rfF9692qzZv9Kw2gbq0BkyCOGFMiL79PFf_JlcRE69jm8j4DhPvkAp0gaZfYLTzRRZ1TF0SkqDRpaLIkE8uLki_a7KE4--xSgcreapsGZMFkFL6nl-R5iyYEjoWxoNFE901W5mqacbPzEvy78w_qX_5ZjElWCVrhgbn146exrJLDNHmkGgmIoH03f08vQyGIjHwG3s8KfoEjVF5MK-DIfjoRAzhYyzhyzq4OrD4LUc0oALOLIfaiCjB22z9R0JJnGCw8g--uNGTUiEzYiLu9u_w7hxkvP445HyhMXqlTBexzH3SEzUeaxG-2vaAN3d39sRv5V8u0Jpiu7pMhkskG-78aMQErQhrokn21jVcUAf74A67cJjEv6pWHOhwO8QJPcKrzoUsYQORrU2z6Glz8Vmj1HrCO5oychNQ8YDy5n_ou2vxajr_p4Lq86A8ToAVHYzbcWltgAZZpIQvXMCqj9i7Qhh0EiPXNUimuJXEhvwrcwZ6tXks2rAVmvsCtqn7FpHvCEOd9NP4fgIPElxii90E0iF1VEWM-E-spUtzKg3vc0TYYK1wTeDfNuegDyERygEZVk7znpCSgZcf5ikkDQNShN76JBfMyEgCqejltwxWEjZ4Y2SEFV0ZSx_w2DZdMstel8h7=w802-h379-no" alt="" width="500" height="260"><br>      
 		  <p>禱動同行</p></a>
       <br> 
       </div>   
@@ -567,7 +586,7 @@ text-decoration:none;
     
 </div>
         </div>
-      </div>      
+      </div>     </div> 
   </div>
 </div>
 
@@ -575,7 +594,7 @@ text-decoration:none;
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>請勿轉載本站相片<br>Reproduction forbidden</p>
+  <p style="text-shadow: 0px -0px 9px white; color:black;">請勿轉載本站相片<br>Reproduction forbidden</p>
 </footer>
 
 <script>
