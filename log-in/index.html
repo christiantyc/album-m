@@ -4,7 +4,7 @@
   <!-- Theme Made By www.w3schools.com -->
   <title>Album</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,12 +21,14 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
   <style>
  
   body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
+	overflow:hidden;
     overflow-x:hidden;   
     height:100%;
     background-image: url('https://christiantyc.github.io/album-m/album-bg.png');
@@ -36,6 +38,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width:device-width !important;
+
     } 
     
   h2 {
@@ -45,6 +49,7 @@
     font-weight: 600;
     margin-bottom: 30px;
     text-shadow: 0px -0px 9px gold;
+	padding-top:20px;
   }
   h4 {
     font-size: 19px;
@@ -63,7 +68,11 @@
 	
   }
   .container-fluid {
-    padding: 60px 50px;
+    padding-top: 60px;
+    margin-bottom: 20%;
+
+
+
   }
   .bg-grey {
     background-color: #f6f6f6;
@@ -112,9 +121,12 @@
     border-radius:5% !important;
     transition: box-shadow 0.5s;
     opacity: 0.8;
-	width:400px;
-	height:300px;
+	width:350px;
+	margin: 0px auto;
+	height:300px auto;
 
+
+	
   }
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
@@ -127,7 +139,7 @@
   .panel-heading {
     color: #fff !important;
     background-color: #f4511e !important;
-    padding: 0px;
+    padding:0px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -143,6 +155,7 @@
   .panel-footer h4 {
     color: #aaa;
     font-size: 14px;
+	padding-right:10%;
   }
   .panel-footer .btn {
     margin: 15px 0;
@@ -150,9 +163,10 @@
     color: #fff;
   }
   .navbar {
+    align:center;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: gold;
+    background-color: transparent;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -163,15 +177,27 @@
 	margin-left:0%;
 	text-align:right;
 	padding-left:0px;
+
   }
   
   
   .navbar li a, .navbar, .navbar-brand {
     color: #fff !important;
+	text-align:right;
+	background-color:transparent !important;
   }
+  
+  
+    .navbar li a, .navbar, .navbar-brand {
+    color: #fff !important;
+	text-align:right;
+	background-color:red ;
+  }
+  
   .navbar-nav li a:hover, .navbar-nav li.active a {
     color: gold !important;
     background-color: #fff !important;
+
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
@@ -189,6 +215,7 @@
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
+	  
 	
   }
   
@@ -260,6 +287,11 @@
     
  
 }  
+
+htext {
+font-size:12px;
+white-space: nowrap;
+}
   
   
 img {
@@ -282,14 +314,16 @@ img {
   
   </style>
 </head>
+<center>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 
 <nav class="navbar navbar-default navbar-fixed-top">
 
-
+<div class="htext">
  <h1 style="text-shadow: 0px -0px 9px black; text-align:center;">中華傳道會青衣堂</h1> 
-  <p style="text-shadow: 0px -0px 9px black; text-align:center;">China Native Evangelistic Crusade Tsing Yi Church</p> 
+  <p style="text-shadow: 0px -0px 9px black; text-align:center;">China Native Evangelistic Crusade <br>Tsing Yi Church</p> 
+  </div>
   
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -298,30 +332,29 @@ img {
         <span class="icon-bar"></span>                        
       </button>
     
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar" style="position:absolute; right:0px; top:100%;">
 	
-      <ul class="nav navbar-nav navbar-right">
-	    <li style="text-shadow: 0px -0px 9px black;"><a href="https://sites.google.com/view/cnectyc-m">回首頁</a></li>
-        <li style="text-shadow: 0px -0px 9px black;"><a href="#about">活動剪影</a></li>
-        <li style="text-shadow: 0px -0px 9px black;"><a href="#services">堂慶</a></li>
-        <li style="text-shadow: 0px -0px 9px black;"><a href="#portfolio">浸禮</a></li>
-        <li style="text-shadow: 0px -0px 9px black;"><a href="#pricing">BMW青少年團契</a></li>
-      </ul>
+	<ul class="nav navbar-nav navbar-right">
+	 	    <li style="text-shadow: 0px -0px 9px black;"><a href="https://sites.google.com/view/cnectyc-m">回首頁</a></li>
+        <li style="text-shadow: 0px -0px 9px black;"><a href="#activities">活動剪影</a></li>
+        <li style="text-shadow: 0px -0px 9px black;"><a href="#anniversary">堂慶</a></li>
+        <li style="text-shadow: 0px -0px 9px black;"><a href="#Baptism">浸禮</a></li>
+        <li style="text-shadow: 0px -0px 9px black;"><a href="#BMW">BMW青少年團契</a></li>
+	</ul>
 	  
     </div>
-  </div>  
-  </div>
-</nav>
+  </div>   
+ </nav>
 
 
-<!-- Container (About Section) -->
 
-<div id="about" class="container-fluid">
+<!-- Container (activities Section) -->
+
+<div id="activities" class="container-fluid">
 
   <div class="row">
-    <div class="col-sm-8">
-      <h2 style="margin-top:90px;">活動剪影</h2><br>
-          <div class="row slideanim">
+                <div class="row slideanim">
+				<h2 style="margin-top:90px;">活動剪影</h2><br>
             <div class="panel panel-default text-center">
         <div class="panel-body">
  <div class="swiper-container">
@@ -386,28 +419,28 @@ img {
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
     
-</div></div></div></div>
-
-
 </div>
 </div>
 </div>
 </div>
-<br><br><br>
+</div>
+</div>
 
 
 
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid">
-  <h2 text-align="center">堂慶</h2>
-  
-      <div class="row slideanim">
-              <div class="panel panel-default text-center">
+
+<!-- Container (anniversary Section) -->
+<div id="anniversary" class="container-fluid">
+
+  <div class="row">
+
+                <div class="row slideanim">
+				<h2 style="margin-top:90px;">堂慶</h2><br>
+            <div class="panel panel-default text-center">
         <div class="panel-body">
-
-  <div class="swiper-container">
+ <div class="swiper-container">
     <div class="swiper-wrapper">
-      
+     
       
 	  
 	  <div class="swiper-slide">
@@ -455,24 +488,30 @@ img {
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
     
-</div></div></div>
+</div></div>
     
   </div>
-</div></div></div></div></div></div>
-<br><br><br>
+</div>
+</div>
+</div>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid">
-  <h2>浸禮</h2><br>
-    <div class="row text-center slideanim">
-    <div class="panel panel-default text-center">
 
+
+
+<!-- Container (Baptism Section) -->
+
+<div id="Baptism" class="container-fluid">
+
+  <div class="row">
+
+                <div class="row slideanim">
+				<h2 style="margin-top:90px;">浸禮</h2><br>
+            <div class="panel panel-default text-center">
         <div class="panel-body">
-  <div class="swiper-container">
+ <div class="swiper-container">
     <div class="swiper-wrapper">
-      
-      
-	  
+	
+ 
 	  <div class="swiper-slide">
 	  <a href="https://photos.google.com/share/AF1QipNAz6l8hqJix2vUPCNH34sBDVSPzenFr6vlpO6Tv6DP1R2bMWsbtxZRmYqMrvpXpw?key=cG1jdmxkeUVfOEFkZ1N0dGpRb0hDOWpfaXE2X3ZR"><img border="1" src="https://lh3.googleusercontent.com/eXbctu9WdI8Ck-l5Wf2uuUo-1WlaSjHiM6T02H6zeYz26KYSCoTEC5itsBm-Z9vHltXGsK8Z4ib2gAnPy-m5jUKphitSQmu_nlb34SWyNUiOylFGG0mF6KpHXvxZvh1CJJZlcPe4D795myWBvr3zR5xHXXl0432L35bruJy1JNVPlfVBORA4Hqx6hDXSzOAMSp8CQ2ToQSoCmExckZcq-fOP61DjkzWT09_5XpWgWuz-0xsRDDc5QJzmxGzCZH8cyK_6r5jctXNKPnoyw8MQkee14y-Bqw40cKL0zOpPPV1iaNwVrfjFLRfEwC-IoUJ2nlSNK_XvIJXVFZDEC1ciZJBqjVAU0xkqFM1fKa6JWudlJ9LvGAIbB1-5HM9eWWax9zATUo2e7uqvvNtN2mQGx9dxIboOk3mZjLIujY31YqNKY-cMAfZcRdhklUR0qXj3z1oSyW4BcuPUWlLAk616swQpp33eddzOn8WOW4TS_cfsxraiRairtA1aRZr_-3_vAZRMHaLwJqx2CpWZv4mVxbe0IV9Zt1Zgwnw31cZyJdiRoyAbX42iE78fyB2eJzcIe0uaD7QyDpPvgU0GMLtNaIkhmAtWyM58HCWmFEqkX-lAH-8W5aqNcdFF7cQ4y3DSObJTGIjqoHwzIjbO0g9MrzxRRf8qZYT1IY0E43FsN79BKNnx_NHi66c7XAQsIqD4Q3WzP2UFhZLJv3mI5zVuPOhN=w725-h484-no" alt="" class="responsive"/><br>
       <p>
@@ -518,19 +557,26 @@ img {
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
     
-</div></div></div></div></div></div></div></div><br><br><br><br><br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
 
-    <h2 text-align="center">BMW青少年團契</h2>
-     
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
+
+<!-- Container (BMW Section) -->
+<div id="BMW" class="container-fluid" style="margin-bottom: -40px !important;">
+
+  <div class="row">
+
+                <div class="row slideanim">
+				<h2 style="margin-top:90px;">BMW青少年團契</h2><br>
+            <div class="panel panel-default text-center">
         <div class="panel-body">
-         <div class="swiper-container">
-    <div class="swiper-wrapper">
+ <div class="swiper-container">
+    <div class="swiper-wrapper">  
       
 	  <div class="swiper-slide">
 	  <a href="https://photos.google.com/share/AF1QipPNJovGhb0BlAOMcDHvBzMSnhxxQCB4hZqaVJzEBnimBJPursasv6AQKx6Rta91Ww?key=TWs1cWlyVFgtQ25JOGJ1UDFJRGJVXzlPSjl1QXFB">
@@ -596,19 +642,25 @@ img {
     <!-- 如果需要导航按钮 -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    
-</div>
-        </div>
-      </div>     </div> 
-  </div>
-</div></div></div></div>
 
-<footer class="container-fluid text-center">
+</div>
+
+        </div>
+      </div>
+  </div>
+</div>
+
+
+</div>
+
+	<footer class="container-fluid text-center" style="position:bottom;">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   <p style="text-shadow: 0px -0px 9px white; color:black;">請勿轉載本站相片<br>Reproduction forbidden</p>
 </footer>
+
+
 
 <script>
   var mySwiper = new Swiper ('.swiper-container', {
